@@ -526,3 +526,22 @@ footer {
 	background: #33ca84;
 	color: white;
   }
+
+
+  /*Smartphone*/
+@media (max-width:670px){
+  
+	.top-wrapper {
+		width: 800px;
+	  }
+	}
+
+
+  /*Tablet*/
+ @media (max-width:1000px){
+  
+	.top-wrapper {
+		width: 870px;
+	  }
+	}
+  
