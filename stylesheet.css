@@ -1,11 +1,15 @@
 /* Reset CSS (JANGAN DIHAPUS) */
 html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
+ul, ol, li, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 100px ;
+}
 body {
   font-family: "Lucida Grande";
 }
@@ -19,16 +23,16 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
+  padding: 90px 0 80px 0;
   background-size: cover;
-  color: rgb(192, 94, 94);
+  color: rgb(53, 26, 117);
   text-align: center;
-  font-family: sans-serif;
+  font-family: marker-felt;
 	font-weight: normal;
 }
  
 .slider { 
-	border: 10px solid #e0cc6f; 
+	border: 10px solid #997e05; 
 	position: relative; 
 	overflow: hidden; 
 	background: #bbb5a3;
@@ -207,7 +211,61 @@ a {
 	}
 } 
  
+@keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}     
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0; 
+	} 
  
+	100% {
+		left: 0; opacity: 0; 
+	}
+}
+
 @keyframes slider {     
 	0% {
 		left: 0; opacity: 0; 
@@ -269,9 +327,13 @@ a {
   margin: 0 auto;
 }
 
+.container p{
+
+	font-size: 20px;
+}
 .top-wrapper h1 {
   opacity: 0.7;
-  font-size: 45px;
+  font-size: 80px;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
@@ -317,20 +379,18 @@ a {
 .fa {
   margin-right: 5px;
 }
-/* Ketik code Anda dibawah */
 
 header {
   height: 65px;
   width: 100%;
-  background-color:rgba(34, 49, 52, 0.9);
+  background-color:#a07f4e;
   position:fixed;
   top:0;
   z-index:10;
 }
 
 .logo{
-  width:124px;
-  margin-top: 20px;
+  width: 65px;
 }
 
 .header-left {
@@ -383,15 +443,15 @@ header {
   position: absolute;            
   top: 90px;            
   width: 50%;            
-  color: white;            
+  color: rgb(41, 87, 172);            
 }            
 
 .txt-contents {            
-  width: 80%;            
+  width: 100%;            
   display: inline-block;            
   margin-top: 20px;            
   font-size: 15px;            
-  color: #b3aeb5;            
+  color: #8a562c;            
 }
 
 .message-wrapper {
@@ -402,9 +462,9 @@ header {
 
 .message{
   padding: 15px 40px;
-  background-color: #5dca88;
+  background-color: #9b7037;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+  box-shadow: 0 7px #c5963d;
 }
 
 .message:active {
@@ -419,10 +479,50 @@ footer img {
 }
 
 footer p {
-  color : #b3aeb5;
-  font-size : 12px;
+  color : #141214;
+  font-size : 18px;
 }
 
 footer {
-  padding-top :30px;
+  padding-top :20px;
+  background-color:#d1bf8e;
+  padding-bottom: 20px;
 }
+
+/* Style all font awesome icons */
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+
+  .fa-instagram {
+	background: #e76b90;
+	color: white;
+  }
+
+  .fa-whatsapp {
+	background: #33ca84;
+	color: white;
+  }
